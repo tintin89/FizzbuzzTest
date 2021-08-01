@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Counter unit tests must show correctly the component Counter 1`] = `ShallowWrapper {}`;
+
+exports[`Counter unit tests test1,must show correctly the component Counter 1`] = `ShallowWrapper {}`;
