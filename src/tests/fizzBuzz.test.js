@@ -12,4 +12,12 @@ describe('fizzBuzz function tests',()=>{
         expect(fizzbuzz(8)).toBe(8);
         expect(fizzbuzz(11)).toBe(11);
     });
+
+
+    test('test2,should return fizz if the the number passed in is divisible by 3',()=>{
+       expect(fizzbuzz(3)).toBe("fizz");  
+       expect(fizzbuzz(6)).toBe("fizz");
+       expect(fizzbuzz(9)).toBe("fizz");
+       expect(fizzbuzz(12)).toBe("fizz");
+    })
 })
