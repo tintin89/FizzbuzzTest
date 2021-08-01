@@ -15,5 +15,11 @@ describe('Counter unit tests',()=>{
 
         const counterText = wrapper.find('h2').text().trim();
         expect(counterText).toBe('0');
+    });
+
+    test('test3,should increase the count by one when the user increments the count',()=>{
+        wrapper.find('button').at(0).simulate('click');
+        const counterText = wrapper.find('h2').text().trim();
+        expect( counterText ).toBe('1');
     })
 })
