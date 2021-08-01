@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function Counter() {
+    const [count,setCount]=useState(0);
     return (
         <div className="counter">
-          <h2>0</h2>
-          
+          <h2>{count}</h2>
+          <button onClick={()=>setCount(prevState=>prevState+1)}>increment</button>
         </div>
     )
 }
