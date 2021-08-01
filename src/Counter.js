@@ -2,8 +2,8 @@ import React from 'react'
 
 function Counter() {
     return (
-        <div>
-        
+        <div className="counter">
+          <h2>0</h2>
         </div>
     )
 }
