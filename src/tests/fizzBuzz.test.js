@@ -19,5 +19,11 @@ describe('fizzBuzz function tests',()=>{
        expect(fizzbuzz(6)).toBe("fizz");
        expect(fizzbuzz(9)).toBe("fizz");
        expect(fizzbuzz(12)).toBe("fizz");
+    });
+
+    test('test3,should return buzz if the the number passed in is divisible by 5',()=>{
+        expect(fizzbuzz(5)).toBe("buzz");  
+        expect(fizzbuzz(10)).toBe("buzz");
+        expect(fizzbuzz(20)).toBe("buzz");
     })
 })
