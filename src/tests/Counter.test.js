@@ -1,11 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Counter from '../Counter';
+import '@testing-library/jest-dom';
+
 
 
 describe('Counter unit tests',()=>{
+    
     let wrapper = shallow(<Counter/>);
 
+   
     test('test1,must show correctly the component Counter',()=>{
 
         expect(wrapper).toMatchSnapshot();
@@ -22,4 +26,6 @@ describe('Counter unit tests',()=>{
         const counterText = wrapper.find('h2').text().trim();
         expect( counterText ).toBe('1');
     })
+
+    
 })
